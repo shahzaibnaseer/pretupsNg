@@ -1,0 +1,14 @@
+.filterSelect {
+  height: 53px !important;
+}
+.ngx-pagination li {
+  display: inline-block;
+  border: 1px solid #e3e8f9;
+  margin: 0 !important;
+  border-radius: 4px !important;
+  padding: 5px 2px;
+}
+
+.ngx-pagination li a {
+  color: #66615b !important;
+}

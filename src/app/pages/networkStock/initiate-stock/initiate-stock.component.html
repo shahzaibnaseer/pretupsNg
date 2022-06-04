@@ -1,0 +1,443 @@
+<div class="row comission">
+  <div class="content-top-nav ml-auto">
+    <ul class="top-nav-ul">
+      <li class="t-line">Network: <span>Bangalore</span></li>
+      <li>23/08/2022, 12:03:00 AM</li>
+    </ul>
+  </div>
+  <div class="col-12">
+    <h4 class="mb-4">Initiate Stock</h4>
+    <ul
+      class="nav nav-tabs comission-profile-first-toggle mb-5"
+      id="myTab"
+      role="tablist"
+    >
+      <li class="nav-item">
+        <a
+          class="nav-link active mr-1"
+          id="single-operation-tab"
+          data-toggle="tab"
+          href="#single-operation"
+          role="tab"
+          aria-controls="single-operation"
+          aria-selected="true"
+          >Transaction</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="bulk-operation-tab"
+          data-toggle="tab"
+          href="#bulk-operation"
+          role="tab"
+          aria-controls="bulk-operation"
+          aria-selected="false"
+          >Deduction</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="col-12">
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="single-operation"
+        role="tabpanel"
+        aria-labelledby="single-operation-tab"
+      >
+        <div class="card p-4">
+          <h4 class="mb-4">Detilas</h4>
+          <div class="p-4 mb-4 bg-light" style="border-radius: 5px">
+            <div class="row">
+              <div class="col-lg-2 col-md-4 col-sm-12">
+                <p class="small text-uppercase light-text">Request Name</p>
+                <p>MD Sohail</p>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-12">
+                <p class="small text-uppercase light-text">Stock Date</p>
+                <p>24-04-2019</p>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-12">
+                <form action="">
+                  <div class="form-group">
+                    <label class="small text-uppercase light-text" for=""
+                      >Refrence Number (Optional)</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control bg-light"
+                      id=""
+                      placeholder=""
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-12">
+                <p class="small text-uppercase light-text">Location</p>
+                <p>Network CGN</p>
+              </div>
+            </div>
+          </div>
+          <h4 class="mb-4">Transection Details</h4>
+          <div class="table-responsive">
+            <table class="table table-borderless w-100 m-0">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Product Code</th>
+                  <th scope="col">Product Name</th>
+                  <th scope="col">Denomination (INR)</th>
+                  <th scope="col">Avaible Stock</th>
+                  <th scope="col">Requested Quantity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>POSTETOPUP</td>
+                  <td>Prepaid Etopup</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      value="1"
+                    />
+                  </td>
+                  <td>9894893.983</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      value="1"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>POSTETOPUP</td>
+                  <td>Prepaid Etopup</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      value="1"
+                    />
+                  </td>
+                  <td>9894893.983</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      value="1"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr />
+          <form action="">
+            <div class="form-group">
+              <label for="">Remarks Optional</label>
+              <textarea class="form-control" id="" rows="3"></textarea>
+            </div>
+          </form>
+          <div class="d-flex justify-content-end">
+            <button type="reset" class="btn btn-reset mr-2">Reset</button>
+            <button
+              type="button"
+              class="btn btn-light-secondary btn text-uppercase"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            >
+              Confirm
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content p-2">
+                  <div class="border p-2" style="border-radius: 10px">
+                    <div class="modal-header border-bottom-0 d-block">
+                      <h4
+                        class="text-center"
+                        style="
+                          font-size: 30px;
+                          font-weight: bold;
+                          color: green;
+                          margin-bottom: 30px;
+                        "
+                      >
+                        <i class="far fa-check-circle"></i>
+                      </h4>
+                      <h4
+                        class="modal-title text-center"
+                        id="exampleModalLongTitle"
+                        style="
+                          color: #000;
+                          font-weight: bold;
+                          font-size: 20px;
+                          padding-left: 25px;
+                          padding-right: 25px;
+                        "
+                      >
+                        Stock has been successfully added.
+                      </h4>
+                      <p class="text-center mb-0 mt-3">Transaction ID</p>
+                      <h4
+                        class="modal-title text-center"
+                        id="exampleModalLongTitle"
+                        style="
+                          color: #000;
+                          font-weight: bold;
+                          font-size: 14px;
+                          padding-left: 25px;
+                          padding-right: 25px;
+                        "
+                      >
+                        NGJT9395HEJ93J3.94JF.82J
+                      </h4>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        style="
+                          padding: 0px;
+                          margin-top: -150px;
+                          margin-right: -10px;
+                        "
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div
+                      class="modal-footer justify-content-center border-top-0 pt-0"
+                    >
+                      <button
+                        type="button"
+                        class="btn text-center"
+                        style="padding-left: 50px; padding-right: 50px"
+                        data-dismiss="modal"
+                      >
+                        Done
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="bulk-operation"
+        role="tabpanel"
+        aria-labelledby="bulk-operation-tab"
+      >
+        <div class="card p-4">
+          <h4 class="mb-4">Detilas</h4>
+          <div class="p-4 mb-4 bg-light" style="border-radius: 5px">
+            <div class="row">
+              <div class="col-lg-2 col-md-4 col-sm-12">
+                <p class="small text-uppercase light-text">Request Name</p>
+                <p>MD Sohail</p>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-12">
+                <p class="small text-uppercase light-text">Stock Date</p>
+                <p>24-04-2019</p>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-12">
+                <form action="">
+                  <div class="form-group">
+                    <label class="small text-uppercase light-text" for=""
+                      >Refrence Number (Optional)</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control bg-light"
+                      id=""
+                      placeholder=""
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-12">
+                <p class="small text-uppercase light-text">Location</p>
+                <p>Network CGN</p>
+              </div>
+            </div>
+          </div>
+          <h4 class="mb-4">Transection Details</h4>
+          <div class="table-responsive">
+            <table class="table table-borderless w-100 m-0">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Product Code</th>
+                  <th scope="col">Product Name</th>
+                  <th scope="col">Denomination (INR)</th>
+                  <th scope="col">Avaible Stock</th>
+                  <th scope="col">Requested Quantity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>POSTETOPUP</td>
+                  <td>Prepaid Etopup</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      value="1"
+                    />
+                  </td>
+                  <td>9894893.983</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      value="1"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>POSTETOPUP</td>
+                  <td>Prepaid Etopup</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      value="1"
+                    />
+                  </td>
+                  <td>9894893.983</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name=""
+                      id=""
+                      value="1"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr />
+          <form action="">
+            <div class="form-group">
+              <label for="">Remarks Optional</label>
+              <textarea class="form-control" id="" rows="3"></textarea>
+            </div>
+          </form>
+          <div class="d-flex justify-content-end">
+            <button type="reset" class="btn btn-reset mr-2">Reset</button>
+            <button
+              type="button"
+              class="btn btn-light-secondary btn text-uppercase"
+              data-toggle="modal"
+              data-target="#kk"
+            >
+              Confirm
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="kk"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="kkTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content p-2">
+                  <div class="border p-2" style="border-radius: 10px">
+                    <div class="modal-header border-bottom-0 d-block">
+                      <h4
+                        class="text-center"
+                        style="
+                          font-size: 30px;
+                          font-weight: bold;
+                          color: #ffbe45;
+                          margin-bottom: 30px;
+                        "
+                      >
+                        <i class="far fa-exclamation-circle"></i>
+                      </h4>
+                      <h4
+                        class="modal-title text-center"
+                        id="exampleModalLongTitle"
+                        style="
+                          color: #000;
+                          font-weight: bold;
+                          font-size: 20px;
+                          padding-left: 25px;
+                          padding-right: 25px;
+                        "
+                      >
+                        Previous Stock Deduction request is pending for
+                        approval.
+                      </h4>
+                      <p class="text-center mb-0 mt-3">
+                        Please approve or reject brfore initiating new stock
+                        deduction request.
+                      </p>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                        style="
+                          padding: 0px;
+                          margin-top: -190px;
+                          margin-right: -10px;
+                        "
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div
+                      class="modal-footer justify-content-center border-top-0 pt-0"
+                    >
+                      <button
+                        type="button"
+                        class="btn text-center"
+                        style="padding-left: 50px; padding-right: 50px"
+                        data-dismiss="modal"
+                      >
+                        Done
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

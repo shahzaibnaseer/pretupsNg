@@ -1,0 +1,865 @@
+<div class="row comission">
+  <div class="content-top-nav ml-auto">
+    <ul class="top-nav-ul">
+      <li class="t-line">Network: <span>Bangalore</span></li>
+      <li>23/08/2022, 12:03:00 AM</li>
+    </ul>
+  </div>
+  <div class="col-12">
+    <h4 class="mb-4">Profile Approval</h4>
+    <div class="card mb-4">
+      <div class="d-flex justify-content-between px-3 py-3">
+        <h4>Filters</h4>
+        <a
+          class="light-text"
+          data-toggle="collapse"
+          href="#collapseExample"
+          role="button"
+          aria-expanded="true"
+          aria-controls="collapseExample"
+        >
+          Hide<i class="fal fa-angle-down ml-2"></i>
+        </a>
+      </div>
+      <div class="collapse show" id="collapseExample">
+        <div class="card-body">
+          <form class="comission-profile-filter-form" action="">
+            <div class="form-row">
+              <div class="form-group col-xl-3 col-lg-4 col-md-5 col-sm-6">
+                <label for="inputState">Loyalty Profile</label>
+                <select id="inputState" class="nice-select w-100">
+                  <option selected>Select</option>
+                  <option>One</option>
+                  <option>Two</option>
+                  <option>Three</option>
+                </select>
+              </div>
+              <div class="form-group col-xl-3 col-lg-4 col-md-5 col-sm-6">
+                <label for="inputState">Version</label>
+                <select id="inputState" class="nice-select w-100">
+                  <option selected>Select</option>
+                  <option>One</option>
+                  <option>Two</option>
+                  <option>Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button type="reset" class="btn btn-reset mr-2">Reset</button>
+              <button type="submit" class="btn btn-light-secondary">
+                Proceed
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="card p-4">
+      <div>
+        <h4 class="mb-3">Profile Approvels</h4>
+        <div class="row py-4 mb-3">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="input-group has-search ml-0 ml-md-4 mt-2 px-md-0 px-4">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fal fa-search"></i>
+                </div>
+              </div>
+              <input
+                type="text"
+                class="form-control ch-channel-search"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="table ch-approval-operator-table mb-5">
+            <thead>
+              <tr>
+                <th
+                  class="border-top-0 border-bottom-0 text-transform-normal ch-approval-th"
+                  scope="col"
+                >
+                  Netwok name
+                </th>
+                <th
+                  class="border-top-0 border-bottom-0 text-transform-normal ch-approval-th"
+                  scope="col"
+                >
+                  Promotion Type
+                </th>
+                <th
+                  class="border-top-0 border-bottom-0 text-transform-normal ch-approval-th"
+                  scope="col"
+                >
+                  Profile Name
+                </th>
+                <th
+                  class="border-top-0 border-bottom-0 text-transform-normal ch-approval-th"
+                  scope="col"
+                >
+                  applicable From
+                </th>
+
+                <th
+                  class="border-top-0 border-bottom-0 text-transform-normal ch-approval-th"
+                  scope="col"
+                >
+                  Applicable To
+                </th>
+                <th
+                  class="border-top-0 border-bottom-0 text-transform-normal ch-approval-th"
+                  scope="col"
+                >
+                  Message Configuration enable
+                </th>
+                <th
+                  class="border-top-0 border-bottom-0 text-transform-normal ch-approval-th"
+                  scope="col"
+                >
+                  Action
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a class="text-primary" href="loyalty-view-profile.html"
+                    >ComPro1</a
+                  >
+                </td>
+                <td>Transaction Based</td>
+                <td>Trans3454</td>
+                <td>
+                  24-04-2019 <br />
+                  09:10:17
+                </td>
+                <td>
+                  24-04-2019 <br />
+                  09:10:17
+                </td>
+                <td>Yes</td>
+                <td>
+                  <div class="action-icons">
+                    <button
+                      type="button"
+                      class="text-success mr-2"
+                      style="
+                        background-color: transparent;
+                        border: none;
+                        padding: 0px;
+                        font-weight: bold;
+                      "
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      Approve
+                    </button>
+
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModalCenter"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="exampleModalCenterTitle"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                      >
+                        <div class="modal-content p-2">
+                          <div class="border p-2" style="border-radius: 10px">
+                            <div class="modal-header border-bottom-0 d-block">
+                              <p class="text-left">
+                                This action cannot be reverted. Are you sure you
+                                want to approve the transection profile?
+                              </p>
+                            </div>
+                            <div
+                              class="modal-footer justify-content-end border-top-0 pt-0"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-reset text-center mr-2"
+                                data-dismiss="modal"
+                              >
+                                No
+                              </button>
+                              <button
+                                type="button"
+                                class="btn text-uppercase"
+                                data-toggle="modal"
+                                data-target="#gg"
+                              >
+                                Yes
+                              </button>
+
+                              <!-- Modal -->
+                              <div
+                                class="modal fade"
+                                id="gg"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="ggTitle"
+                                aria-hidden="true"
+                              >
+                                <div
+                                  class="modal-dialog modal-dialog-centered"
+                                  role="document"
+                                >
+                                  <div class="modal-content p-2">
+                                    <div
+                                      class="border p-2"
+                                      style="border-radius: 10px"
+                                    >
+                                      <div
+                                        class="modal-header border-bottom-0 d-block"
+                                      >
+                                        <h4
+                                          class="text-center"
+                                          style="
+                                            font-size: 30px;
+                                            font-weight: bold;
+                                            color: green;
+                                            margin-bottom: 30px;
+                                          "
+                                        >
+                                          <i class="far fa-check-circle"></i>
+                                        </h4>
+                                        <h4
+                                          class="modal-title text-center"
+                                          id="exampleModalLongTitle"
+                                          style="
+                                            color: #000;
+                                            font-weight: bold;
+                                            font-size: 25px;
+                                            padding-left: 25px;
+                                            padding-right: 25px;
+                                          "
+                                        >
+                                          Profile Transa84588 is Successfully
+                                          Aprroved.
+                                        </h4>
+                                        <button
+                                          type="button"
+                                          class="close"
+                                          data-dismiss="modal"
+                                          aria-label="Close"
+                                          style="
+                                            padding: 0px;
+                                            margin-top: -150px;
+                                            margin-right: -10px;
+                                          "
+                                        >
+                                          <span aria-hidden="true"
+                                            >&times;</span
+                                          >
+                                        </button>
+                                      </div>
+                                      <div
+                                        class="modal-footer justify-content-center border-top-0 pt-0"
+                                      >
+                                        <button
+                                          type="button"
+                                          class="btn text-center"
+                                          style="
+                                            padding-left: 50px;
+                                            padding-right: 50px;
+                                          "
+                                          data-dismiss="modal"
+                                        >
+                                          Done
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="text-danger mr-2" href=""> Reject </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="text-primary" href="loyalty-view-profile.html"
+                    >ComPro1</a
+                  >
+                </td>
+                <td>Transaction Based</td>
+                <td>Trans3454</td>
+                <td>
+                  24-04-2019 <br />
+                  09:10:17
+                </td>
+                <td>
+                  24-04-2019 <br />
+                  09:10:17
+                </td>
+                <td>Yes</td>
+                <td>
+                  <div class="action-icons">
+                    <button
+                      type="button"
+                      class="text-success mr-2"
+                      style="
+                        background-color: transparent;
+                        border: none;
+                        padding: 0px;
+                        font-weight: bold;
+                      "
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      Approve
+                    </button>
+
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModalCenter"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="exampleModalCenterTitle"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                      >
+                        <div class="modal-content p-2">
+                          <div class="border p-2" style="border-radius: 10px">
+                            <div class="modal-header border-bottom-0 d-block">
+                              <p class="text-left">
+                                This action cannot be reverted. Are you sure you
+                                want to approve the transection profile?
+                              </p>
+                            </div>
+                            <div
+                              class="modal-footer justify-content-end border-top-0 pt-0"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-reset text-center mr-2"
+                                data-dismiss="modal"
+                              >
+                                No
+                              </button>
+                              <button
+                                type="button"
+                                class="btn text-uppercase"
+                                data-toggle="modal"
+                                data-target="#gg"
+                              >
+                                Yes
+                              </button>
+
+                              <!-- Modal -->
+                              <div
+                                class="modal fade"
+                                id="gg"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="ggTitle"
+                                aria-hidden="true"
+                              >
+                                <div
+                                  class="modal-dialog modal-dialog-centered"
+                                  role="document"
+                                >
+                                  <div class="modal-content p-2">
+                                    <div
+                                      class="border p-2"
+                                      style="border-radius: 10px"
+                                    >
+                                      <div
+                                        class="modal-header border-bottom-0 d-block"
+                                      >
+                                        <h4
+                                          class="text-center"
+                                          style="
+                                            font-size: 30px;
+                                            font-weight: bold;
+                                            color: green;
+                                            margin-bottom: 30px;
+                                          "
+                                        >
+                                          <i class="far fa-check-circle"></i>
+                                        </h4>
+                                        <h4
+                                          class="modal-title text-center"
+                                          id="exampleModalLongTitle"
+                                          style="
+                                            color: #000;
+                                            font-weight: bold;
+                                            font-size: 25px;
+                                            padding-left: 25px;
+                                            padding-right: 25px;
+                                          "
+                                        >
+                                          Profile Transa84588 is Successfully
+                                          Aprroved.
+                                        </h4>
+                                        <button
+                                          type="button"
+                                          class="close"
+                                          data-dismiss="modal"
+                                          aria-label="Close"
+                                          style="
+                                            padding: 0px;
+                                            margin-top: -150px;
+                                            margin-right: -10px;
+                                          "
+                                        >
+                                          <span aria-hidden="true"
+                                            >&times;</span
+                                          >
+                                        </button>
+                                      </div>
+                                      <div
+                                        class="modal-footer justify-content-center border-top-0 pt-0"
+                                      >
+                                        <button
+                                          type="button"
+                                          class="btn text-center"
+                                          style="
+                                            padding-left: 50px;
+                                            padding-right: 50px;
+                                          "
+                                          data-dismiss="modal"
+                                        >
+                                          Done
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="text-danger mr-2" href=""> Reject </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="text-primary" href="loyalty-view-profile.html"
+                    >ComPro1</a
+                  >
+                </td>
+                <td>Transaction Based</td>
+                <td>Trans3454</td>
+                <td>
+                  24-04-2019 <br />
+                  09:10:17
+                </td>
+                <td>
+                  24-04-2019 <br />
+                  09:10:17
+                </td>
+                <td>Yes</td>
+                <td>
+                  <div class="action-icons">
+                    <button
+                      type="button"
+                      class="text-success mr-2"
+                      style="
+                        background-color: transparent;
+                        border: none;
+                        padding: 0px;
+                        font-weight: bold;
+                      "
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      Approve
+                    </button>
+
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModalCenter"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="exampleModalCenterTitle"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                      >
+                        <div class="modal-content p-2">
+                          <div class="border p-2" style="border-radius: 10px">
+                            <div class="modal-header border-bottom-0 d-block">
+                              <p class="text-left">
+                                This action cannot be reverted. Are you sure you
+                                want to approve the transection profile?
+                              </p>
+                            </div>
+                            <div
+                              class="modal-footer justify-content-end border-top-0 pt-0"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-reset text-center mr-2"
+                                data-dismiss="modal"
+                              >
+                                No
+                              </button>
+                              <button
+                                type="button"
+                                class="btn text-uppercase"
+                                data-toggle="modal"
+                                data-target="#gg"
+                              >
+                                Yes
+                              </button>
+
+                              <!-- Modal -->
+                              <div
+                                class="modal fade"
+                                id="gg"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="ggTitle"
+                                aria-hidden="true"
+                              >
+                                <div
+                                  class="modal-dialog modal-dialog-centered"
+                                  role="document"
+                                >
+                                  <div class="modal-content p-2">
+                                    <div
+                                      class="border p-2"
+                                      style="border-radius: 10px"
+                                    >
+                                      <div
+                                        class="modal-header border-bottom-0 d-block"
+                                      >
+                                        <h4
+                                          class="text-center"
+                                          style="
+                                            font-size: 30px;
+                                            font-weight: bold;
+                                            color: green;
+                                            margin-bottom: 30px;
+                                          "
+                                        >
+                                          <i class="far fa-check-circle"></i>
+                                        </h4>
+                                        <h4
+                                          class="modal-title text-center"
+                                          id="exampleModalLongTitle"
+                                          style="
+                                            color: #000;
+                                            font-weight: bold;
+                                            font-size: 25px;
+                                            padding-left: 25px;
+                                            padding-right: 25px;
+                                          "
+                                        >
+                                          Profile Transa84588 is Successfully
+                                          Aprroved.
+                                        </h4>
+                                        <button
+                                          type="button"
+                                          class="close"
+                                          data-dismiss="modal"
+                                          aria-label="Close"
+                                          style="
+                                            padding: 0px;
+                                            margin-top: -150px;
+                                            margin-right: -10px;
+                                          "
+                                        >
+                                          <span aria-hidden="true"
+                                            >&times;</span
+                                          >
+                                        </button>
+                                      </div>
+                                      <div
+                                        class="modal-footer justify-content-center border-top-0 pt-0"
+                                      >
+                                        <button
+                                          type="button"
+                                          class="btn text-center"
+                                          style="
+                                            padding-left: 50px;
+                                            padding-right: 50px;
+                                          "
+                                          data-dismiss="modal"
+                                        >
+                                          Done
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="text-danger mr-2" href=""> Reject </a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="text-primary" href="loyalty-view-profile.html"
+                    >ComPro1</a
+                  >
+                </td>
+                <td>Transaction Based</td>
+                <td>Trans3454</td>
+                <td>
+                  24-04-2019 <br />
+                  09:10:17
+                </td>
+                <td>
+                  24-04-2019 <br />
+                  09:10:17
+                </td>
+                <td>Yes</td>
+                <td>
+                  <div class="action-icons">
+                    <button
+                      type="button"
+                      class="text-success mr-2"
+                      style="
+                        background-color: transparent;
+                        border: none;
+                        padding: 0px;
+                        font-weight: bold;
+                      "
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      Approve
+                    </button>
+
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModalCenter"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="exampleModalCenterTitle"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                      >
+                        <div class="modal-content p-2">
+                          <div class="border p-2" style="border-radius: 10px">
+                            <div class="modal-header border-bottom-0 d-block">
+                              <p class="text-left">
+                                This action cannot be reverted. Are you sure you
+                                want to approve the transection profile?
+                              </p>
+                            </div>
+                            <div
+                              class="modal-footer justify-content-end border-top-0 pt-0"
+                            >
+                              <button
+                                type="button"
+                                class="btn btn-reset text-center mr-2"
+                                data-dismiss="modal"
+                              >
+                                No
+                              </button>
+                              <button
+                                type="button"
+                                class="btn text-uppercase"
+                                data-toggle="modal"
+                                data-target="#gg"
+                              >
+                                Yes
+                              </button>
+
+                              <!-- Modal -->
+                              <div
+                                class="modal fade"
+                                id="gg"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="ggTitle"
+                                aria-hidden="true"
+                              >
+                                <div
+                                  class="modal-dialog modal-dialog-centered"
+                                  role="document"
+                                >
+                                  <div class="modal-content p-2">
+                                    <div
+                                      class="border p-2"
+                                      style="border-radius: 10px"
+                                    >
+                                      <div
+                                        class="modal-header border-bottom-0 d-block"
+                                      >
+                                        <h4
+                                          class="text-center"
+                                          style="
+                                            font-size: 30px;
+                                            font-weight: bold;
+                                            color: green;
+                                            margin-bottom: 30px;
+                                          "
+                                        >
+                                          <i class="far fa-check-circle"></i>
+                                        </h4>
+                                        <h4
+                                          class="modal-title text-center"
+                                          id="exampleModalLongTitle"
+                                          style="
+                                            color: #000;
+                                            font-weight: bold;
+                                            font-size: 25px;
+                                            padding-left: 25px;
+                                            padding-right: 25px;
+                                          "
+                                        >
+                                          Profile Transa84588 is Successfully
+                                          Aprroved.
+                                        </h4>
+                                        <button
+                                          type="button"
+                                          class="close"
+                                          data-dismiss="modal"
+                                          aria-label="Close"
+                                          style="
+                                            padding: 0px;
+                                            margin-top: -150px;
+                                            margin-right: -10px;
+                                          "
+                                        >
+                                          <span aria-hidden="true"
+                                            >&times;</span
+                                          >
+                                        </button>
+                                      </div>
+                                      <div
+                                        class="modal-footer justify-content-center border-top-0 pt-0"
+                                      >
+                                        <button
+                                          type="button"
+                                          class="btn text-center"
+                                          style="
+                                            padding-left: 50px;
+                                            padding-right: 50px;
+                                          "
+                                          data-dismiss="modal"
+                                        >
+                                          Done
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="text-danger mr-2" href=""> Reject </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row mb-5 px-4">
+          <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+            <form class="ml-0 ml-lg-4 mt-1" action="">
+              <div
+                class="form-groug d-flex justify-content-center justify-content-lg-start pagination-entries"
+              >
+                <label
+                  for="inputPassword"
+                  class="col-form-label mr-3 rounded-left"
+                  >Show</label
+                >
+                <input
+                  type="number"
+                  class="form-control mr-3"
+                  id="entery"
+                  placeholder="10"
+                  value="10"
+                />
+                <p class="mt-2">Entries</p>
+              </div>
+            </form>
+          </div>
+          <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
+            <div
+              class="ch-pagination d-lg-flex d-block float-lg-right float-none mr-0 mr-md-4"
+            >
+              <nav aria-label="Page navigation example" class="mr-0 mr-lg-2">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">...</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">25</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">78</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="input-pagination mx-auto">
+                <form action="">
+                  <div class="form-group d-flex">
+                    <label for="inputPassword" class="col-form-label mr-2"
+                      >Go to page</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control mr-3 w-25"
+                      id="entery"
+                      placeholder="10"
+                      value="10"
+                    />
+                    <a href=""> Go <i class="fal fa-angle-right"></i> </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,670 @@
+<div class="row comission">
+  <div class="content-top-nav ml-auto">
+    <ul class="top-nav-ul">
+      <li class="t-line">Network: <span>Bangalore</span></li>
+      <li>23/08/2022, 12:03:00 AM</li>
+    </ul>
+  </div>
+  <div class="col-12">
+    <h4 class="mb-4">Transfer Rules</h4>
+    <ul
+      class="nav nav-tabs comission-profile-first-toggle mb-5"
+      id="myTab"
+      role="tablist"
+    >
+      <li class="nav-item">
+        <a
+          class="nav-link active mr-1"
+          id="single-operation-tab"
+          data-toggle="tab"
+          href="#single-operation"
+          role="tab"
+          aria-controls="single-operation"
+          aria-selected="true"
+          >Single Operation</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="bulk-operation-tab"
+          data-toggle="tab"
+          href="#bulk-operation"
+          role="tab"
+          aria-controls="bulk-operation"
+          aria-selected="false"
+          >Bulk Operation</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="col-12">
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="single-operation"
+        role="tabpanel"
+        aria-labelledby="single-operation-tab"
+      >
+        <div class="card mb-4">
+          <div class="d-flex justify-content-between px-4 py-3">
+            <h4>Filters</h4>
+            <a
+              class="light-text"
+              data-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="true"
+              aria-controls="collapseExample"
+            >
+              Hide<i class="fal fa-angle-down ml-2"></i>
+            </a>
+          </div>
+          <div class="collapse show" id="collapseExample">
+            <div class="card-body">
+              <form class="comission-profile-filter-form" action="">
+                <div class="form-row">
+                  <div class="form-group col-xl-2 col-lg-3 col-md-4 col-sm-12">
+                    <label for="inputState">Domain</label>
+                    <select id="inputState" class="nice-select w-100">
+                      <option selected>All</option>
+                      <option>One</option>
+                      <option>Two</option>
+                      <option>Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-xl-2 col-lg-3 col-md-4 col-sm-12">
+                    <label for="inputState">Category</label>
+                    <select id="inputState" class="nice-select w-100">
+                      <option selected>All</option>
+                      <option>One</option>
+                      <option>Two</option>
+                      <option>Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-xl-2 col-lg-3 col-md-4 col-sm-12">
+                    <label for="inputState">Grade</label>
+                    <select id="inputState" class="nice-select w-100">
+                      <option selected>All</option>
+                      <option>One</option>
+                      <option>Two</option>
+                      <option>Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-xl-2 col-lg-3 col-md-4 col-sm-12">
+                    <label for="inputState">Status</label>
+                    <select id="inputState" class="nice-select w-100">
+                      <option selected>All</option>
+                      <option>One</option>
+                      <option>Two</option>
+                      <option>Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button type="reset" class="btn btn-reset mr-2">Reset</button>
+                  <button type="submit" class="btn btn-light-secondary">
+                    Proceed
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="row px-4 pt-3">
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="d-flex mt-3">
+                  <p class="mb-0 mr-3">
+                    <b>15</b> transer rule are selected.
+                    <a class="text-primary" href=""> Show Selected</a>
+                  </p>
+                  <a class="" style="color: #ffbe45" href="">Clear</a>
+                </div>
+                <a class="text-primary" href=""
+                  >Select all 107 transfer rule.</a
+                >
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="text-lg-right text-md-right">
+                  <a
+                    class="btn mr-2"
+                    href="edit-transfer-rule-channel-to-subscribe.html"
+                  >
+                    <i class="fal fa-edit mr-2"></i>
+                    Modif Selected
+                  </a>
+                  <a class="btn" href="">
+                    <i class="fal fa-trash-alt mr-2"></i>
+                    Delete Selected
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row py-4 px-3 px-md-0 mb-3">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <div class="input-group has-search ml-0 ml-md-4">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fal fa-search"></i>
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search by Profile name"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-light-secondary" type="button">
+                      GO
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="offset-xl-2 col-xl-4 col-lg-6 col-md-6 col-sm-12 text-center text-md-right"
+              >
+                <a
+                  class="btn mr-4"
+                  href="add-transfer-rule-channel-to-subscriber.html"
+                  ><i class="fal fa-plus-circle mr-2"></i>ADD TRANSFER RULES</a
+                >
+              </div>
+            </div>
+            <div class="table-container">
+              <table class="table mb-5">
+                <thead>
+                  <tr>
+                    <th class="border-top-0 border-bottom-0" scope="col">
+                      <form action="">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="all"
+                          />
+                          <label class="custom-control-label" for="all"></label>
+                        </div>
+                      </form>
+                    </th>
+                    <th class="border-top-0 border-bottom-0" scope="col">
+                      Request gateway code
+                    </th>
+                    <th class="border-top-0 border-bottom-0" scope="col">
+                      Channel domain
+                    </th>
+                    <th class="border-top-0 border-bottom-0" scope="col">
+                      Channel category
+                    </th>
+                    <th class="border-top-0 border-bottom-0" scope="col">
+                      Channel grade
+                    </th>
+                    <th class="border-top-0 border-bottom-0" scope="col">
+                      Receiver type
+                    </th>
+                    <th class="border-top-0 border-bottom-0" scope="col">
+                      Receiver service class
+                    </th>
+                    <th class="border-top-0 border-bottom-0" scope="col">
+                      Service type
+                    </th>
+                    <th class="border-top-0 border-bottom-0" scope="col">
+                      Sub service
+                    </th>
+                    <th class="border-top-0 border-bottom-0" scope="col">
+                      Card group set
+                    </th>
+                    <th class="border-top-0 border-bottom-0" scope="col">
+                      Status
+                    </th>
+                    <th class="border-top-0 border-bottom-0" scope="col">
+                      Action
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <form action="">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="customCheck1"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="customCheck1"
+                          ></label>
+                        </div>
+                      </form>
+                    </th>
+                    <td>All</td>
+                    <td>Distributor</td>
+                    <td>Super distributor</td>
+                    <td>AUT16056</td>
+                    <td>Postpaid subscriber</td>
+                    <td>All (All)</td>
+                    <td>Postpaid bill payment</td>
+                    <td>Postpaid</td>
+                    <td>neo1</td>
+                    <td class="text-success">Active</td>
+                    <td>
+                      <div class="action-icons">
+                        <a
+                          class="light-text mr-2"
+                          href="edit-transfer-rule-channel-to-subscribe.html"
+                        >
+                          <i class="fal fa-edit"></i>
+                        </a>
+
+                        <a class="light-text mr-2" href="">
+                          <i class="fal fa-trash-alt"></i>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <form action="">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="customCheck1"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="customCheck1"
+                          ></label>
+                        </div>
+                      </form>
+                    </th>
+                    <td>All</td>
+                    <td>Distributor</td>
+                    <td>Super distributor</td>
+                    <td>AUT16056</td>
+                    <td>Postpaid subscriber</td>
+                    <td>All (All)</td>
+                    <td>Postpaid bill payment</td>
+                    <td>Postpaid</td>
+                    <td>neo1</td>
+                    <td class="text-success">Active</td>
+                    <td>
+                      <div class="action-icons">
+                        <a
+                          class="light-text mr-2"
+                          href="edit-transfer-rule-channel-to-subscribe.html"
+                        >
+                          <i class="fal fa-edit"></i>
+                        </a>
+
+                        <a class="light-text mr-2" href="">
+                          <i class="fal fa-trash-alt"></i>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <form action="">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="customCheck1"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="customCheck1"
+                          ></label>
+                        </div>
+                      </form>
+                    </th>
+                    <td>All</td>
+                    <td>Distributor</td>
+                    <td>Super distributor</td>
+                    <td>AUT16056</td>
+                    <td>Postpaid subscriber</td>
+                    <td>All (All)</td>
+                    <td>Postpaid bill payment</td>
+                    <td>Postpaid</td>
+                    <td>neo1</td>
+                    <td class="text-success">Active</td>
+                    <td>
+                      <div class="action-icons">
+                        <a
+                          class="light-text mr-2"
+                          href="edit-transfer-rule-channel-to-subscribe.html"
+                        >
+                          <i class="fal fa-edit"></i>
+                        </a>
+
+                        <a class="light-text mr-2" href="">
+                          <i class="fal fa-trash-alt"></i>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <form action="">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="customCheck1"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="customCheck1"
+                          ></label>
+                        </div>
+                      </form>
+                    </th>
+                    <td>All</td>
+                    <td>Distributor</td>
+                    <td>Super distributor</td>
+                    <td>AUT16056</td>
+                    <td>Postpaid subscriber</td>
+                    <td>All (All)</td>
+                    <td>Postpaid bill payment</td>
+                    <td>Postpaid</td>
+                    <td>neo1</td>
+                    <td class="text-success">Active</td>
+                    <td>
+                      <div class="action-icons">
+                        <a
+                          class="light-text mr-2"
+                          href="edit-transfer-rule-channel-to-subscribe.html"
+                        >
+                          <i class="fal fa-edit"></i>
+                        </a>
+
+                        <a class="light-text mr-2" href="">
+                          <i class="fal fa-trash-alt"></i>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <form action="">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="customCheck1"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="customCheck1"
+                          ></label>
+                        </div>
+                      </form>
+                    </th>
+                    <td>All</td>
+                    <td>Distributor</td>
+                    <td>Super distributor</td>
+                    <td>AUT16056</td>
+                    <td>Postpaid subscriber</td>
+                    <td>All (All)</td>
+                    <td>Postpaid bill payment</td>
+                    <td>Postpaid</td>
+                    <td>neo1</td>
+                    <td class="text-success">Active</td>
+                    <td>
+                      <div class="action-icons">
+                        <a
+                          class="light-text mr-2"
+                          href="edit-transfer-rule-channel-to-subscribe.html"
+                        >
+                          <i class="fal fa-edit"></i>
+                        </a>
+
+                        <a class="light-text mr-2" href="">
+                          <i class="fal fa-trash-alt"></i>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <form action="">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="customCheck1"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="customCheck1"
+                          ></label>
+                        </div>
+                      </form>
+                    </th>
+                    <td>All</td>
+                    <td>Distributor</td>
+                    <td>Super distributor</td>
+                    <td>AUT16056</td>
+                    <td>Postpaid subscriber</td>
+                    <td>All (All)</td>
+                    <td>Postpaid bill payment</td>
+                    <td>Postpaid</td>
+                    <td>neo1</td>
+                    <td class="text-success">Active</td>
+                    <td>
+                      <div class="action-icons">
+                        <a
+                          class="light-text mr-2"
+                          href="edit-transfer-rule-channel-to-subscribe.html"
+                        >
+                          <i class="fal fa-edit"></i>
+                        </a>
+
+                        <a class="light-text mr-2" href="">
+                          <i class="fal fa-trash-alt"></i>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      <form action="">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="customCheck1"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="customCheck1"
+                          ></label>
+                        </div>
+                      </form>
+                    </th>
+                    <td>All</td>
+                    <td>Distributor</td>
+                    <td>Super distributor</td>
+                    <td>AUT16056</td>
+                    <td>Postpaid subscriber</td>
+                    <td>All (All)</td>
+                    <td>Postpaid bill payment</td>
+                    <td>Postpaid</td>
+                    <td>neo1</td>
+                    <td class="text-success">Active</td>
+                    <td>
+                      <div class="action-icons">
+                        <a
+                          class="light-text mr-2"
+                          href="edit-transfer-rule-channel-to-subscribe.html"
+                        >
+                          <i class="fal fa-edit"></i>
+                        </a>
+
+                        <a class="light-text mr-2" href="">
+                          <i class="fal fa-trash-alt"></i>
+                        </a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="row mb-5 px-4">
+              <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                <form class="ml-0 ml-lg-4 mt-1" action="">
+                  <div
+                    class="form-groug d-flex justify-content-center justify-content-lg-start pagination-entries"
+                  >
+                    <label
+                      for="inputPassword"
+                      class="col-form-label mr-3 rounded-left"
+                      >Show</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control mr-3"
+                      id="entery"
+                      placeholder="10"
+                      value="10"
+                    />
+                    <p class="mt-2">Entries</p>
+                  </div>
+                </form>
+              </div>
+              <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
+                <div
+                  class="ch-pagination d-lg-flex d-block float-lg-right float-none mr-0 mr-md-4"
+                >
+                  <nav
+                    aria-label="Page navigation example"
+                    class="mr-0 mr-lg-2"
+                  >
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">...</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">25</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">78</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="input-pagination mx-auto">
+                    <form action="">
+                      <div class="form-group d-flex">
+                        <label for="inputPassword" class="col-form-label mr-2"
+                          >Go to page</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control mr-3 w-25"
+                          id="entery"
+                          placeholder="10"
+                          value="10"
+                        />
+                        <a href=""> Go <i class="fal fa-angle-right"></i> </a>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="bulk-operation"
+        role="tabpanel"
+        aria-labelledby="bulk-operation-tab"
+      >
+        <div class="card mb-4">
+          <div class="card-body">
+            <form class="comission-profile-filter-form" action="">
+              <div class="form-row">
+                <div class="form-group col-lg-2 col-md-4 col-sm-12">
+                  <label for="inputState">Batch name</label>
+                  <input
+                    type="text"
+                    id="inputState"
+                    class="form-control"
+                    placeholder="Search by Profile name"
+                  />
+                </div>
+              </div>
+              <div class="upload-image mt-4">
+                <a href="#download" class="download-template"
+                  ><i class="fal fa-arrow-to-bottom download-icon mr-2"></i>
+                  Download Template</a
+                >
+                <div class="file-upload mt-4">
+                  <h5>Upload file</h5>
+                  <div class="image-upload-wrap">
+                    <input
+                      class="file-upload-input"
+                      type="file"
+                      id="inputState"
+                      onchange="readURL(this);"
+                      accept="image/*"
+                    />
+                    <div class="drag-text">
+                      <h4>Drag and drop a file or select add Image</h4>
+                      <h3>Choose</h3>
+                    </div>
+                  </div>
+                  <div class="file-upload-content">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                      <button
+                        type="button"
+                        onclick="removeUpload()"
+                        class="remove-image"
+                      >
+                        Remove
+                        <span class="image-title">Uploaded Image</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-2">
+                  (You can upload file upto 2MB in XML, XLS, CSV format)
+                </p>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button type="reset" class="btn btn-reset mr-2">Reset</button>
+                <button type="submit" class="btn btn-light-secondary">
+                  Proceed
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

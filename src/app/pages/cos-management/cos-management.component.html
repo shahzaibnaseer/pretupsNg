@@ -1,0 +1,317 @@
+<div class="row comission">
+  <h4 class="mb-4">COS Management</h4>
+  <div class="content-top-nav ml-auto">
+    <ul class="top-nav-ul">
+      <li class="t-line">Network: <span>Bangalore</span></li>
+      <li>23/08/2022, 12:03:00 AM</li>
+    </ul>
+  </div>
+  <div class="col-12">
+    <ul
+      class="nav nav-tabs comission-profile-first-toggle mb-3"
+      id="myTab"
+      role="tablist"
+    >
+      <li class="nav-item">
+        <a
+          class="nav-link active mr-1"
+          id="single-operation-tab"
+          data-toggle="tab"
+          href="#single-operation"
+          role="tab"
+          aria-controls="single-operation"
+          aria-selected="true"
+          >Define</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          id="bulk-operation-tab"
+          data-toggle="tab"
+          href="#bulk-operation"
+          role="tab"
+          aria-controls="bulk-operation"
+          aria-selected="false"
+          >Manage</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="col-12">
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="single-operation"
+        role="tabpanel"
+        aria-labelledby="single-operation-tab"
+      >
+        <div class="card mb-4">
+          <div class="card-body">
+            <h4 class="mb-3">Define COS Details</h4>
+            <form class="comission-profile-filter-form" action="">
+              <div class="upload-image mt-4">
+                <a href="#download" class="download-template"
+                  ><i class="fal fa-arrow-to-bottom download-icon mr-2"></i>
+                  Download Template</a
+                >
+                <div class="file-upload mt-4">
+                  <h5>Upload file</h5>
+                  <div class="image-upload-wrap">
+                    <input
+                      class="file-upload-input"
+                      type="file"
+                      id="inputState"
+                      onchange="readURL(this);"
+                      accept="image/*"
+                    />
+                    <div class="drag-text">
+                      <h4>Drag and drop a file or select add Image</h4>
+                      <h3>Choose</h3>
+                    </div>
+                  </div>
+                  <div class="file-upload-content">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                      <button
+                        type="button"
+                        onclick="removeUpload()"
+                        class="remove-image"
+                      >
+                        Remove
+                        <span class="image-title">Uploaded Image</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-2">
+                  (You can upload file upto 2MB in XML, XLS, CSV format)
+                </p>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button type="reset" class="btn btn-reset mr-2">Reset</button>
+                <button
+                  type="button"
+                  class="btn btn-light-secondary btn text-uppercase"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >
+                  Submit
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModalCenter"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalCenterTitle"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog modal-dialog-centered"
+                    role="document"
+                  >
+                    <div class="modal-content p-2">
+                      <div class="border p-2" style="border-radius: 10px">
+                        <div class="modal-header border-bottom-0 d-block">
+                          <h4
+                            class="text-center"
+                            style="
+                              color: #000;
+                              font-weight: bold;
+                              font-size: 25px;
+                              padding-left: 25px;
+                              padding-right: 25px;
+                            "
+                          >
+                            Review & Confirm
+                          </h4>
+                          <hr />
+                          <p>Uploaded File</p>
+                          <div
+                            class="d-flex justify-content-between bg-light p-2"
+                            style="width: 150px"
+                          >
+                            <p class="m-0">File25.xls</p>
+                            <i class="fal fa-file-download mt-1"></i>
+                          </div>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                            style="
+                              padding: 0px;
+                              margin-top: -150px;
+                              margin-right: -10px;
+                            "
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div
+                          class="modal-footer justify-content-center border-top-0 pt-0"
+                        >
+                          <button
+                            type="button"
+                            class="btn btn text-uppercase"
+                            data-toggle="modal"
+                            data-target="#new-one"
+                          >
+                            Confirm
+                          </button>
+
+                          <!-- Modal -->
+                          <div
+                            class="modal fade"
+                            id="new-one"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="new-oneTitle"
+                            aria-hidden="true"
+                          >
+                            <div
+                              class="modal-dialog modal-dialog-centered"
+                              role="document"
+                            >
+                              <div class="modal-content p-2">
+                                <div
+                                  class="border p-2"
+                                  style="border-radius: 10px"
+                                >
+                                  <div
+                                    class="modal-header border-bottom-0 d-block text-center"
+                                  >
+                                    <h4
+                                      class="text-center"
+                                      style="
+                                        font-size: 30px;
+                                        font-weight: bold;
+                                        color: green;
+                                        margin-bottom: 30px;
+                                      "
+                                    >
+                                      <i class="far fa-check-circle"></i>
+                                    </h4>
+                                    <h4
+                                      class="modal-title text-center"
+                                      id="exampleModalLongTitle"
+                                      style="
+                                        color: #000;
+                                        font-weight: bold;
+                                        font-size: 25px;
+                                        padding-left: 25px;
+                                        padding-right: 25px;
+                                      "
+                                    >
+                                      File (File125.xls) Uploaded Successfully.
+                                    </h4>
+                                    <a class="text-primary text-center" href=""
+                                      >View error log</a
+                                    >
+                                    <button
+                                      type="button"
+                                      class="close"
+                                      data-dismiss="modal"
+                                      aria-label="Close"
+                                      style="
+                                        padding: 0px;
+                                        margin-top: -150px;
+                                        margin-right: -10px;
+                                      "
+                                    >
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div
+                                    class="modal-footer justify-content-center border-top-0 pt-0"
+                                  >
+                                    <button
+                                      type="button"
+                                      class="btn text-center"
+                                      style="
+                                        padding-left: 50px;
+                                        padding-right: 50px;
+                                      "
+                                      data-dismiss="modal"
+                                    >
+                                      Done
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="bulk-operation"
+        role="tabpanel"
+        aria-labelledby="bulk-operation-tab"
+      >
+        <div class="card mb-4">
+          <div class="card-body">
+            <h4 class="mb-3">Manage COS Details</h4>
+            <form class="comission-profile-filter-form" action="">
+              <div class="upload-image mt-4">
+                <a href="#download" class="download-template"
+                  ><i class="fal fa-arrow-to-bottom download-icon mr-2"></i>
+                  Download Template</a
+                >
+                <div class="file-upload mt-4">
+                  <h5>Upload file</h5>
+                  <div class="image-upload-wrap">
+                    <input
+                      class="file-upload-input"
+                      type="file"
+                      id="inputState"
+                      onchange="readURL(this);"
+                      accept="image/*"
+                    />
+                    <div class="drag-text">
+                      <h4>Drag and drop a file or select add Image</h4>
+                      <h3>Choose</h3>
+                    </div>
+                  </div>
+                  <div class="file-upload-content">
+                    <img class="file-upload-image" src="#" alt="your image" />
+                    <div class="image-title-wrap">
+                      <button
+                        type="button"
+                        onclick="removeUpload()"
+                        class="remove-image"
+                      >
+                        Remove
+                        <span class="image-title">Uploaded Image</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-2">
+                  (You can upload file upto 2MB in XML, XLS, CSV format)
+                </p>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button type="reset" class="btn btn-reset mr-2">Reset</button>
+                <button type="submit" class="btn btn-light-secondary">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

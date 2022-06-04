@@ -1,0 +1,3254 @@
+<div class="row comission">
+  <div class="col-12">
+    <div class="row">
+      <div class="col-lg-6 order-lg-1 order-2">
+        <div class="d-flex mb-lg-0 mb-2">
+          <a class="text-dark" href="channel-user.html">Channel User</a>
+          <span class="mx-2"
+            ><i class="text-secondary fas fa-chevron-right"></i
+          ></span>
+          <h4>Edit Channel User</h4>
+        </div>
+      </div>
+      <div class="col-lg-6 order-1 order-lg-2">
+        <div class="content-top-nav text-lg-right ml-auto">
+          <ul class="top-nav-ul">
+            <li class="t-line">Network: <span>Bangalore</span></li>
+            <li>23/08/2022, 12:03:00 AM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <section class="signup-step-container">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-12">
+            <div class="wizard">
+              <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active">
+                    <a
+                      href="#step1"
+                      data-toggle="tab"
+                      aria-controls="step1"
+                      role="tab"
+                      aria-expanded="true"
+                      ><span class="round-tab">1 </span>
+                      <i>Personal Details</i></a
+                    >
+                  </li>
+                  <li role="presentation" class="disabled">
+                    <a
+                      href="#step2"
+                      data-toggle="tab"
+                      aria-controls="step2"
+                      role="tab"
+                      aria-expanded="false"
+                      ><span class="round-tab">2</span> <i>Login Details</i></a
+                    >
+                  </li>
+                  <li role="presentation" class="disabled">
+                    <a
+                      href="#step3"
+                      data-toggle="tab"
+                      aria-controls="step3"
+                      role="tab"
+                      ><span class="round-tab">3</span> <i>Role Details</i></a
+                    >
+                  </li>
+                  <li role="presentation" class="disabled">
+                    <a
+                      href="#step4"
+                      data-toggle="tab"
+                      aria-controls="step4"
+                      role="tab"
+                      ><span class="round-tab">4</span>
+                      <i>Payment & Service Details</i></a
+                    >
+                  </li>
+                  <li role="presentation" class="disabled">
+                    <a
+                      href="#step5"
+                      data-toggle="tab"
+                      aria-controls="step5"
+                      role="tab"
+                      ><span class="round-tab">5</span>
+                      <i>Profile Details</i></a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <form
+                role="form"
+                action="index.html"
+                class="login-box"
+                style="margin-top: 5rem"
+              >
+                <div class="tab-content" id="main_form">
+                  <div class="tab-pane active" role="tabpanel" id="step1">
+                    <div class="card p-4">
+                      <div class="row">
+                        <div class="col-lg-2 col-md-4 col-sm-12">
+                          <div class="">
+                            <p class="light-text text-uppercase small mb-1">
+                              Domain
+                            </p>
+                            <p class="mb-0">Distributor</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-12">
+                          <div class="">
+                            <p class="light-text text-uppercase small mb-1">
+                              Category
+                            </p>
+                            <p class="mb-0">Retailer</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-12">
+                          <div class="">
+                            <p class="light-text text-uppercase small mb-1">
+                              Parent Category
+                            </p>
+                            <p class="mb-0">Dealer</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-12">
+                          <div class="">
+                            <p class="light-text text-uppercase small mb-1">
+                              Geography
+                            </p>
+                            <p class="mb-0">Karnatka</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-12">
+                          <div class="">
+                            <p class="light-text text-uppercase small mb-1">
+                              Owner User
+                            </p>
+                            <p class="mb-0">Chirantan</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-12">
+                          <div class="">
+                            <p class="light-text text-uppercase small mb-1">
+                              Parent User
+                            </p>
+                            <p class="mb-0">Owis</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card p-4">
+                      <form [formGroup]="editForm">
+                        <div class="row">
+                          <div class="col-12">
+                            <h4 class="mb-3">Personal Infromation</h4>
+                          </div>
+                          <div
+                            formGroupName="personalInformation"
+                            class="row px-4"
+                          >
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >First Name</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="firstName"
+                                  name=""
+                                  placeholder=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Last Name
+                                  <span class="light-text"
+                                    >(Optional)</span
+                                  ></label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="lastName"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Short Name</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="shortName"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Contact Number
+                                  <span class="light-text"
+                                    >(Optional)</span
+                                  ></label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="contactNumber"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Contact Person
+                                  <span class="light-text"
+                                    >(Optional)</span
+                                  ></label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="contactPerson"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for="">Email ID</label>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  formControlName="emailId"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Other Email ID (for alerts)
+                                  <span class="light-text"
+                                    >(Optional)</span
+                                  ></label
+                                >
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id=""
+                                  formControlName="alternateEmail"
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >SSN
+                                  <span class="light-text"
+                                    >(Optional)</span
+                                  ></label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="ssn"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Designation
+                                  <span class="light-text"
+                                    >(Optional)</span
+                                  ></label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="designation"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Subscriber Code
+                                  <span class="light-text"
+                                    >(Optional)</span
+                                  ></label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="subscriberCode"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >External Code</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="externalCode"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row p-3" formGroupName="geography">
+                            <div class="col-12 mt-3">
+                              <h6>Geography Details</h6>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Geography</label
+                                >
+                                <select
+                                  class="custom-select"
+                                  formControlName="geography"
+                                  name=""
+                                >
+                                  <option selected>Karnatka</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for="">Area</label>
+                                <select
+                                  class="custom-select"
+                                  name=""
+                                  formControlName="area"
+                                >
+                                  <option selected>Bangalore</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Sub Area 1</label
+                                >
+                                <select
+                                  class="custom-select"
+                                  name=""
+                                  formControlName="subarea1"
+                                >
+                                  <option selected>HSR Layout</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Sub Area 2</label
+                                >
+                                <select
+                                  class="custom-select"
+                                  name=""
+                                  formControlName="subarea2"
+                                >
+                                  <option selected>Select</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Sub Area 3</label
+                                >
+                                <select
+                                  class="custom-select"
+                                  name=""
+                                  formControlName="subarea3"
+                                >
+                                  <option selected>Select</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Sub Area 4</label
+                                >
+                                <select
+                                  class="custom-select"
+                                  name=""
+                                  formControlName="subarea4"
+                                >
+                                  <option selected>Select</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row px-3" formGroupName="address">
+                            <div class="col-12">
+                              <h4 class="mb-3 mt-3">
+                                Address
+                                <span class="light-text small">(Optional)</span>
+                              </h4>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Address Line 1</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="addressLine1"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Address Line 2</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="addressLine2"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for="">City</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="city"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for="">State</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="state"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for="">Country</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="country"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Longitude</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="longitude"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for="">Latitude</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="latitude"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="row px-3"
+                            formGroupName="notificationLanguage"
+                          >
+                            <div class="col-12">
+                              <h4 class="mb-3 mt-3">
+                                Notification Language
+                                <span class="light-text small">(Optional)</span>
+                              </h4>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark d-block" for=""
+                                  >Channel to Channel</label
+                                >
+
+                                <p class="d-inline-block mr-3">
+                                  <input
+                                    type="radio"
+                                    id="test1"
+                                    value="cenglish"
+                                    formControlName="channelToChannel"
+                                    name="channelToChannel"
+                                    checked
+                                  />
+                                  <label for="test1">English</label>
+                                </p>
+                                <p class="d-inline-block mr-3">
+                                  <input
+                                    type="radio"
+                                    id="test2"
+                                    value="cspanish"
+                                    name="channelToChannel"
+                                    formControlName="channelToChannel"
+                                  />
+                                  <label for="test2">Spanish</label>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark d-block" for=""
+                                  >Peer to Peer</label
+                                >
+
+                                <p class="d-inline-block mr-3">
+                                  <input
+                                    type="radio"
+                                    value="penglish"
+                                    name="peerToPeer"
+                                    formControlName="peerToPeer"
+                                    checked
+                                  />
+                                  <label for="test1">English</label>
+                                </p>
+                                <p class="d-inline-block mr-3">
+                                  <input
+                                    type="radio"
+                                    formControlName="peerToPeer"
+                                    name="peerToPeer"
+                                    value="pspanish"
+                                  />
+                                  <label>Spanish</label>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="row px-3"
+                            formGroupName="otherInformation"
+                          >
+                            <div class="col-12">
+                              <h4 class="mb-3 mt-3">
+                                Other Information
+                                <span class="light-text small">(Optional)</span>
+                              </h4>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for="">Company</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="company"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for="">Fax</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="fax"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Appointment Date</label
+                                >
+                                <input
+                                  type="date"
+                                  class="form-control"
+                                  formControlName="appointmentDate"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >First Name</label
+                                >
+                                <select
+                                  class="custom-select"
+                                  name=""
+                                  formControlName="documentType"
+                                >
+                                  <option selected>PAN Card</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Document No.</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  formControlName="documentName"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <ul class="list-inline pull-right">
+                              <li>
+                                <button
+                                  type="button"
+                                  class="default-btn btn btn-reset"
+                                >
+                                  Back
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  type="button"
+                                  class="default-btn btn next-step"
+                                  type="submit"
+                                  (click)="updateChannelUser()"
+                                >
+                                  Next
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane" role="tabpanel" id="step2">
+                    <div class="card p-4">
+                      <form [formGroup]="webLogin">
+                        <div class="row">
+                          <div class="col-12">
+                            <h4 class="mb-3">Web Login</h4>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                              <label class="text-dark" for=""
+                                >Web Login ID</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                formControlName="webLoginId"
+                                id=""
+                                name=""
+                                placeholder=""
+                                value=""
+                              />
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-none col-sm-none"></div>
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                              <label class="text-dark" for=""
+                                >Allowed IP's
+                                <span class="light-text"
+                                  >(Optional)</span
+                                ></label
+                              >
+                              <textarea
+                                name=""
+                                class="form-control"
+                                formControlName="allowedIPS"
+                                id=""
+                                cols="5"
+                                rows="5"
+                              ></textarea>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-none col-sm-none"></div>
+                          <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+                            <label class="text-dark" for=""
+                              >Login allowed days
+                              <span class="light-text">(Optional)</span></label
+                            >
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="allSelectedDays"
+                                    (change)="getAllDaysSelected($event)"
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="allSelectedDays"
+                                    >Select All</label
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 d-flex">
+                                <!-- <div
+                                  class="form-check form-check-inline"
+                                  *ngFor="let day of loginDays; let i = index"
+                                >
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    [value]="day.value"
+                                    (change)="onCheckboxChange($event)"
+                                  />
+                                  <label class="form-check-label">{{
+                                    day.name
+                                  }}</label>
+                                </div> -->
+                                <div
+                                  *ngFor="
+                                    let control of loginDaysArray.controls;
+                                    let i = index
+                                  "
+                                  class="pl-2"
+                                >
+                                  <label for="Days{{ i }}">
+                                    <input
+                                      type="checkbox"
+                                      [formControl]="control"
+                                      id="days{{ i }}"
+                                      (change)="getSelectedDay()"
+                                      [checked]="control ? true : false"
+                                    />
+
+                                    {{ loginDays[i] }}
+                                  </label>
+                                </div>
+                                <!-- <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="monday"
+
+                                  />
+                                  <label class="form-check-label" for="monday"
+                                    >Monday</label
+                                  >
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="tuesday"
+
+                                  />
+                                  <label class="form-check-label" for="tuesday"
+                                    >Tuesday</label
+                                  >
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="wednesday"
+
+                                  />
+                                  <label
+                                    class="form-check-label"
+                                    for="wednesday"
+                                    >Wednesday</label
+                                  >
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="thursday"
+
+                                  />
+                                  <label class="form-check-label" for="thursday"
+                                    >Thursday</label
+                                  >
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="friday"
+
+                                  />
+                                  <label class="form-check-label" for="friday"
+                                    >Friday</label
+                                  >
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="saturday"
+
+                                  />
+                                  <label class="form-check-label" for="saturday"
+                                    >Saturday</label
+                                  >
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    id="sunday"
+
+                                  />
+                                  <label class="form-check-label" for="sunday"
+                                    >Sunday</label
+                                  >
+                                </div> -->
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-lg-8 col-md-6 col-sm-12">
+                                <div class="form-group mt-3">
+                                  <label class="text-dark" for=""
+                                    >Login Allowed Time
+                                    <span class="light-text"
+                                      >(Optional)</span
+                                    ></label
+                                  >
+                                  <select
+                                    class="custom-select w-100"
+                                    formControlName="allowedTime"
+                                    name=""
+                                  >
+                                    <option selected value="">Karnatka</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-none col-sm-none"></div>
+                          <div class="col-12">
+                            <h4 class="mb-3 mt-3">Web Login</h4>
+                          </div>
+                          <div class="col-12">
+                            <a
+                              class="float-right mb-3 font-weight-bold"
+                              style="color: #e5012a"
+                              href=""
+                            >
+                              <i class="far fa-plus-circle"></i> Add Mobile
+                              Number
+                            </a>
+                          </div>
+                          <div class="row" formGroupName="mobileLogin">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Mobile Number</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id=""
+                                  formControlName="mobileNo"
+                                  name=""
+                                  placeholder=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Transection PIN</label
+                                >
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Confirm Transection PIN</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id=""
+                                  name=""
+                                  placeholder=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >SMSC Profile</label
+                                >
+                                <select
+                                  class="custom-select"
+                                  name=""
+                                  formControlName="smscProfile"
+                                >
+                                  <option selected>Distributor</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="form-group">
+                                <label class="text-dark" for=""
+                                  >Descriptoin</label
+                                >
+                                <textarea
+                                  formControlName="description"
+                                  name=""
+                                  class="form-control"
+                                  id=""
+                                  cols="5"
+                                  rows="5"
+                                ></textarea>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check form-check-inline">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  id="primary"
+                                />
+                                <label class="form-check-label" for="primary"
+                                  >Make this primary number</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <ul class="list-inline pull-right">
+                              <li>
+                                <button
+                                  type="button"
+                                  class="default-btn prev-step btn btn-reset"
+                                >
+                                  Back
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  type="button"
+                                  class="default-btn next-step skip-btn btn btn-reset"
+                                >
+                                  Skip
+                                </button>
+                              </li>
+                              <li>
+                                <button
+                                  type="button"
+                                  class="default-btn btn next-step"
+                                  (click)="updateChannelUser()"
+                                >
+                                  Next
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="tab-pane" role="tabpanel" id="step3">
+                    <div class="card p-4">
+                      <div class="row">
+                        <div class="col-12">
+                          <h4 class="mb-4">
+                            Roles Type
+                            <span class="light-text small">(Optional)</span>
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <div
+                            class="list-group wiz-channel"
+                            id="list-tab"
+                            role="tablist"
+                            style="flex-direction: row"
+                          >
+                            <a
+                              class="list-group-item list-group-item-action active pt-3"
+                              style="width: 150px"
+                              id="list-home-list"
+                              data-toggle="list"
+                              href="#list-home"
+                              role="tab"
+                              aria-controls="home"
+                              >System Role</a
+                            >
+                            <div
+                              style="
+                                height: 50px;
+                                width: 1px;
+                                background-color: #000;
+                                margin: 0px 10px;
+                              "
+                            ></div>
+                            <a
+                              class="list-group-item list-group-item-action pt-3"
+                              style="width: 150px"
+                              id="list-profile-list"
+                              data-toggle="list"
+                              href="#list-profile"
+                              role="tab"
+                              aria-controls="profile"
+                              >Group Role</a
+                            >
+                          </div>
+                        </div>
+                        <form [formGroup]="roleTypeForm">
+                          <div class="col-12">
+                            <div class="tab-content" id="nav-tabContent">
+                              <div
+                                class="tab-pane fade show active"
+                                id="list-home"
+                                role="tabpanel"
+                                aria-labelledby="list-home-list"
+                              >
+                                <div class="row mb-4">
+                                  <div class="col-lg-5 col-md-6 col-sm-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Channel to Subscriber Transfer
+                                    </p>
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        formControlName="channelToSubscriberTransfer"
+                                        id="recharge"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="recharge"
+                                        >Recharge</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-5 col-md-6 col-sm-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Channel to Subscriber Reversal
+                                    </p>
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        formControlName="channelToSubscriberReversal"
+                                        type="checkbox"
+                                        id="Reversal"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="Reversal"
+                                        >Reversal</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-lg-5 col-md-6 col-sm-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Operator to Channel Transfer
+                                    </p>
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        formControlName="operatorToChannelTransfer"
+                                        id="operatorToChannelTransfer"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="operatorToChannelTransfer"
+                                        >Initiate Transfer</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-5 col-md-6 col-sm-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Operator to Channel Reversal
+                                    </p>
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        formControlName="operatorToChannelReturn"
+                                        id="Return"
+                                      />
+                                      <label
+                                        class="form-check-label"
+                                        for="Return"
+                                        >Return</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Channel to Channel Transfer
+                                    </p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Select all</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Approve Batch Transfer</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Approve Batch Withdraw</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Staff Channel Transfer details</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Staff self report</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Voucher transaction report</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-lg-5 col-md-6 col-sm-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Channel to Channel Return
+                                    </p>
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Return</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-5 col-md-6 col-sm-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Channel to Channel Withdraw
+                                    </p>
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Withdraw</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Batch Recharge Management
+                                    </p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Select all</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Batch Recharge</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Batch Id Report</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Cancle subscriber schedule</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Chancle schedule</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Re-Schedule Batch Recharge</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >View Subscriber Schedule</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Schedule TopUp Status report</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >View Schedule Transfer</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      channel Users
+                                    </p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Select all</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Add Channel User</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Add Staff User</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Associate Profile</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Batch User initiate</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Change PIN</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Change Self PIN</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Change Notification Language</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Change User PIN Management</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Delete Channel User</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Batch User Initiate</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Change PIN</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Modify Channel User</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Modify Staff User</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Resume Staff User</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Self Details Modify</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Supend Channel User</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Supend Staff User</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      channel Users Transfer
+                                    </p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Select all</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Transfer Confirmation</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Transfer Initiate</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-12">
+                                    <p class="mb-1 font-weight-bold">Masters</p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Select all</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Bar User</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Change Language</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >View Barred List</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Access Control
+                                    </p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Select all</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >PIN or Password History Report</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Access Control Management</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Channel Reports-Channel to Subscriber
+                                    </p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Select all</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Additional commission detail</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Additional commission summary</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >C2S Transfer</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >C2S transfers time wise</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Additional commission detail</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Additional commission summary</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >C2S transfer service wise</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Staff C2S transfers
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Channel Reports-Operator to Channel
+                                    </p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Select all</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Transfer acknowledgement</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Transfer details</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Voucher transaction report</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Channel Reports-Channel to Channel
+                                    </p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Select all</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >C2C transfer summary</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Channel transfer details
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Staff channel transfer details</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Staff self C2C report</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Voucher transaction report
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Channel Reports-Summary
+                                    </p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Select all</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Operation summary report
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Transaction summary report</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Channel Reports-User
+                                    </p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Select all</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Channel User daily balance
+                                        movement</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >External user list
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >External user roles report</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Internal user list</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >User closing balance
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >User zero balance counter detail
+                                      </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >User zero balance counter
+                                        summary</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row mb-4">
+                                  <div class="col-12">
+                                    <p class="mb-1 font-weight-bold">
+                                      Channel Enquiry
+                                    </p>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Select all</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Batch Channel to channel transfer
+                                        Enquiry</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Batch user enquiry</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Bulk voucher download enquiry</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Channel to channel transfer
+                                        enquiry</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Channel to subscriber transfers
+                                        enquiry</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Operator to channel transfer</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Other's balance</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Self balance</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Self commission enquiry</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Self counters</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Staff channel to channel transfer
+                                        enquiry</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Staff channel to subscriber
+                                        transfers</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Staff self channel to channel
+                                        details</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >Staff self channel to subscriber
+                                        details</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >View channel user</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >View self details</label
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="form-check form-check-inline">
+                                      <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id=""
+                                      />
+                                      <label class="form-check-label" for=""
+                                        >View self details</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="tab-pane fade"
+                                id="list-profile"
+                                role="tabpanel"
+                                aria-labelledby="list-profile-list"
+                              >
+                                ...
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-12">
+                          <ul class="list-inline pull-right">
+                            <li>
+                              <button
+                                type="button"
+                                class="default-btn prev-step btn btn-reset"
+                              >
+                                Back
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="default-btn next-step skip-btn btn btn-reset"
+                              >
+                                Skip
+                              </button>
+                            </li>
+                            <li>
+                              <button
+                                type="button"
+                                class="default-btn btn next-step"
+                              >
+                                Next
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="step4">
+                  <div class="card p-4">
+                    <div class="row">
+                      <div class="col-12">
+                        <h4 class="mb-4">
+                          Payment & Service Details
+                          <span class="light-text small">(Optional)</span>
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-12">
+                        <p class="mb-1 font-weight-bold">Payment Information</p>
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Select all</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Demand draft</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Cheque</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Cash</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Online</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Others</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-12">
+                        <p class="mb-1 font-weight-bold">Suspension Rights</p>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Inbound suspension</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Outbound suspension</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-12">
+                        <p class="mb-1 font-weight-bold">
+                          Services Information
+                        </p>
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Select all</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >C2S gift recharge</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Customer recharge</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Customer recharge fix line</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Customer recharge reversal</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Electronic voucher distribution</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Internet</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Multiple voucher distribution</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Postpaid bill payment</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >User LMS enquiry</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >User LMS redemption</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Voucher recharge</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-12">
+                        <p class="mb-1 font-weight-bold">Voucher Type</p>
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Select all</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Physical voucher</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Electronic voucher</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Digital voucher</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Physical test</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Electronic test</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Digital test</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="col-12">
+                        <p class="mb-1 font-weight-bold">Low Balance Alert</p>
+                      </div>
+                      <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Select all</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Allow low balance alert for self</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Allow parent low balance alert</label
+                          >
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="select-all"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="select-all"
+                            >Allow low balance alert for others</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <ul class="list-inline pull-right">
+                          <li>
+                            <button
+                              type="button"
+                              class="default-btn prev-step btn btn-reset"
+                            >
+                              Back
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              type="button"
+                              class="default-btn next-step skip-btn btn btn-reset"
+                            >
+                              Skip
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              type="button"
+                              class="default-btn btn next-step"
+                            >
+                              Next
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="all-info-container">
+                                        <div class="list-content">
+                                            <a href="#listone" data-toggle="collapse" aria-expanded="false" aria-controls="listone">Collapse 1 <i class="fa fa-chevron-down"></i></a>
+                                            <div class="collapse" id="listone">
+                                                <div class="list-box">
+                                                    <div class="row">
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>First and Last Name *</label>
+                                                                <input class="form-control" type="text"  name="name" placeholder="" disabled="disabled">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Phone Number *</label>
+                                                                <input class="form-control" type="text" name="name" placeholder="" disabled="disabled">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-content">
+                                            <a href="#listtwo" data-toggle="collapse" aria-expanded="false" aria-controls="listtwo">Collapse 2 <i class="fa fa-chevron-down"></i></a>
+                                            <div class="collapse" id="listtwo">
+                                                <div class="list-box">
+                                                    <div class="row">
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Address 1 *</label>
+                                                                <input class="form-control" type="text" name="name" placeholder="" disabled="disabled">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>City / Town *</label>
+                                                                <input class="form-control" type="text" name="name" placeholder="" disabled="disabled">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Country *</label>
+                                                                <select name="country2" class="form-control" id="country2" disabled="disabled">
+                                                                    <option value="NG" selected="selected">Nigeria</option>
+                                                                    <option value="NU">Niue</option>
+                                                                    <option value="NF">Norfolk Island</option>
+                                                                    <option value="KP">North Korea</option>
+                                                                    <option value="MP">Northern Mariana Islands</option>
+                                                                    <option value="NO">Norway</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Legal Form</label>
+                                                                <select name="legalform2" class="form-control" id="legalform2" disabled="disabled">
+                                                                    <option value="" selected="selected">-Select an Answer-</option>
+                                                                    <option value="AG">Limited liability company</option>
+                                                                    <option value="GmbH">Public Company</option>
+                                                                    <option value="GbR">No minimum capital, unlimited liability of partners, non-busines</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Business Registration No.</label>
+                                                                <input class="form-control" type="text" name="name" placeholder="" disabled="disabled">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Registered</label>
+                                                                <select name="vat2" class="form-control" id="vat2" disabled="disabled">
+                                                                    <option value="" selected="selected">-Select an Answer-</option>
+                                                                    <option value="yes">Yes</option>
+                                                                    <option value="no">No</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Seller</label>
+                                                                <input class="form-control" type="text" name="name" placeholder="" disabled="disabled">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label>Company Name *</label>
+                                                                <input class="form-control" type="password" name="name" placeholder="" disabled="disabled">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list-content">
+                                            <a href="#listthree" data-toggle="collapse" aria-expanded="false" aria-controls="listthree">Collapse 3 <i class="fa fa-chevron-down"></i></a>
+                                            <div class="collapse" id="listthree">
+                                                <div class="list-box">
+                                                    <div class="row">
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Name *</label>
+                                                                <input class="form-control" type="text" name="name" placeholder="">
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label>Number *</label>
+                                                                <input class="form-control" type="text" name="name" placeholder="">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                </div>
+                <div class="tab-pane" role="tabpanel" id="step5">
+                  <div class="card p-4">
+                    <h4 class="mb-4">Grade & Profile Information</h4>
+                    <div class="row">
+                      <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div>
+                          <p class="text-uppercase light-text small mb-1">
+                            User grade
+                          </p>
+                          <p>AUT23456</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div>
+                          <p class="text-uppercase light-text small mb-1">
+                            Commission profile
+                          </p>
+                          <p>Retailer 2</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div>
+                          <p class="text-uppercase light-text small mb-1">
+                            Transfer profile
+                          </p>
+                          <p>Dealer 1</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-4 col-sm-12">
+                        <div>
+                          <p class="text-uppercase light-text small mb-1">
+                            Transfer Rule Type
+                          </p>
+                          <p>Rule type A</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <ul class="list-inline pull-right">
+                          <li>
+                            <button
+                              type="button"
+                              class="default-btn prev-step btn btn-reset"
+                            >
+                              Cancle
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              type="button"
+                              class="default-btn prev-step btn btn-reset"
+                            >
+                              Back
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              type="button"
+                              class="default-btn next-step skip-btn btn btn-reset"
+                            >
+                              Save & Review
+                            </button>
+                          </li>
+                          <!-- <li><button type="button" class="default-btn btn next-step">Save & Submit</button></li> -->
+                          <li>
+                            <button
+                              type="button"
+                              class="btn text-uppercase"
+                              data-toggle="modal"
+                              data-target="#exampleModalCenter"
+                            >
+                              Save & Submit
+                            </button>
+
+                            <!-- Modal -->
+                            <div
+                              class="modal fade"
+                              id="exampleModalCenter"
+                              tabindex="-1"
+                              role="dialog"
+                              aria-labelledby="exampleModalCenterTitle"
+                              aria-hidden="true"
+                            >
+                              <div
+                                class="modal-dialog modal-dialog-centered"
+                                role="document"
+                              >
+                                <div class="modal-content p-2">
+                                  <div
+                                    class="border p-2"
+                                    style="border-radius: 10px"
+                                  >
+                                    <div
+                                      class="modal-header border-bottom-0 d-block"
+                                    >
+                                      <h4
+                                        class="text-center"
+                                        style="
+                                          font-size: 30px;
+                                          font-weight: bold;
+                                          color: green;
+                                          margin-bottom: 30px;
+                                        "
+                                      >
+                                        <i class="far fa-check-circle"></i>
+                                      </h4>
+                                      <h4
+                                        class="modal-title text-center"
+                                        id="exampleModalLongTitle"
+                                        style="
+                                          color: #000;
+                                          font-weight: bold;
+                                          font-size: 25px;
+                                          padding-left: 25px;
+                                          padding-right: 25px;
+                                        "
+                                      >
+                                        The changes have been done.
+                                      </h4>
+                                      <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                        style="
+                                          padding: 0px;
+                                          margin-top: -115px;
+                                          margin-right: -10px;
+                                        "
+                                      >
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div
+                                      class="modal-footer justify-content-center border-top-0 pt-0"
+                                    >
+                                      <button
+                                        type="button"
+                                        class="btn text-center"
+                                        style="
+                                          padding-left: 50px;
+                                          padding-right: 50px;
+                                        "
+                                        data-dismiss="modal"
+                                      >
+                                        Done
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

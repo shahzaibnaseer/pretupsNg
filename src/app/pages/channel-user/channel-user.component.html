@@ -1,0 +1,292 @@
+<div class="row comission">
+  <ngx-spinner
+    bdColor="rgba(0, 0, 0, 0.8)"
+    size="medium"
+    color="#fff"
+    type="square-jelly-box"
+    [fullScreen]="true"
+    ><p style="color: white">Loading...</p></ngx-spinner
+  >
+  <div class="content-top-nav ml-auto">
+    <ul class="top-nav-ul">
+      <li class="t-line">Network: <span>Bangalore</span></li>
+      <li>23/08/2022, 12:03:00 AM</li>
+    </ul>
+  </div>
+  <div class="col-12">
+    <h4 class="mb-4">Channel User</h4>
+    <div class="card mb-4">
+      <div class="d-flex justify-content-between px-3 py-3">
+        <h4>Filters</h4>
+        <a
+          class="light-text"
+          data-toggle="collapse"
+          href="#collapseExample"
+          role="button"
+          aria-expanded="true"
+          aria-controls="collapseExample"
+        >
+          Hide<i class="fal fa-angle-down ml-2"></i>
+        </a>
+      </div>
+      <div class="collapse show" id="collapseExample">
+        <div class="card-body">
+          <form
+            class="comission-profile-filter-form"
+            [formGroup]="filterForm"
+            (ngSubmit)="filterClientUser()"
+          >
+            <div class="form-row align-items-end">
+              <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                <label for="inputState">Domain</label>
+                <select
+                  id="inputState"
+                  class="form-control filterSelect"
+                  formControlName="domain"
+                >
+                  <option selected value="default">All</option>
+                  <option value="distributor">Distributor</option>
+                </select>
+              </div>
+              <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                <label for="inputState">Category</label>
+                <select
+                  id="inputState"
+                  class="form-control filterSelect"
+                  formControlName="category"
+                >
+                  <option selected value="default">All</option>
+                  <option value="dealer">Dealer</option>
+                  <option value="retailer">Retailer</option>
+                </select>
+              </div>
+              <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                <label for="inputState">Geography</label>
+                <select
+                  id="inputState"
+                  class="form-control filterSelect"
+                  formControlName="geography"
+                >
+                  <option selected value="default">All</option>
+                  <option value="tamilnadu">Tamilnadu</option>
+                  <option value="karnataka">Karnataka</option>
+                </select>
+              </div>
+              <div class="form-group col-xl-2 col-lg-4 col-md-4 col-sm-12">
+                <label for="inputState">Status</label>
+                <select
+                  id="inputState"
+                  class="form-control filterSelect"
+                  formControlName="status"
+                >
+                  <option selected value="default">All</option>
+                  <option value="active">Active</option>
+                  <option value="inactive">Inactive</option>
+                  <option value="barred">Barred</option>
+                  <option value="suspended">Suspended</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button
+                type="reset"
+                class="btn btn-reset mr-2"
+                (click)="getClientUsers()"
+              >
+                Reset
+              </button>
+              <button type="submit" class="btn btn-light-secondary">
+                Proceed
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div>
+        <div class="row align-items-baseline py-4 mb-3">
+          <div class="col-lg-7 col-md-5 col-sm-4">
+            <h4 class="pl-4 mb-2 mb-sm-0">Channel User</h4>
+          </div>
+          <div class="col-lg-5 col-md-7 col-sm-8">
+            <form
+              class="comission-profile-filter-form ch-form-operator"
+              action=""
+            >
+              <div
+                class="form-row justify-content-center justify-content-md-end px-4"
+              >
+                <div class="form-group col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                  <select
+                    id="inputState"
+                    class="form-control"
+                    (click)="downloadCsv()"
+                  >
+                    <option selected value="download">
+                      <i class="fal fa-arrow-to-bottom download-icon mr-2"></i>
+                      Download
+                    </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="form-group col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                  <select id="inputState" class="form-control">
+                    <option selected>Edit Columns</option>
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-12">
+            <div class="input-group has-search ml-0 ml-md-4 mt-2 px-4 px-md-0">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fal fa-search"></i>
+                </div>
+              </div>
+              <input
+                type="text"
+                class="form-control ch-operator-search"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="table ch-channel-table mb-5">
+            <thead>
+              <tr>
+                <th
+                  class="border-top-0 border-bottom-0 ch-channel-th"
+                  scope="col"
+                >
+                  User name
+                </th>
+                <th
+                  class="border-top-0 border-bottom-0 ch-channel-th"
+                  scope="col"
+                >
+                  Mobile number
+                </th>
+                <th
+                  class="border-top-0 border-bottom-0 ch-channel-th"
+                  scope="col"
+                >
+                  Login ID
+                </th>
+                <th
+                  class="border-top-0 border-bottom-0 ch-channel-th"
+                  scope="col"
+                >
+                  Category
+                </th>
+
+                <th
+                  class="border-top-0 border-bottom-0 ch-channel-th"
+                  scope="col"
+                >
+                  Status
+                </th>
+                <th class="border-top-0 border-bottom-0" scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                *ngFor="
+                  let item of channelUsers
+                    | paginate: { itemsPerPage: itemPerpage, currentPage: p }
+                "
+              >
+                <td>
+                  <a
+                    class="text-primary"
+                    href="channel-user-view-user-details.html"
+                  >
+                    {{ item?.firstName }} {{ item?.lastName }}
+                  </a>
+                </td>
+                <td>{{ item.information[0]?.mobileNo }}</td>
+                <td>
+                  {{
+                    item.userActivityDetails?.loginDetails?.webLogin?.webLoginId
+                  }}
+                </td>
+                <td>{{ item.information[0].categoryName }}</td>
+                <td class="text-success">{{ item.status | titlecase }}</td>
+                <td>
+                  <div class="action-icons">
+                    <a class="light-text mr-2">
+                      <i
+                        class="fal fa-edit"
+                        [routerLink]="['/editChannelUser', item.userId]"
+                      ></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row mb-5 px-4">
+          <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+            <form class="ml-0 ml-lg-4 mt-1">
+              <div
+                class="form-groug d-flex justify-content-center justify-content-lg-start pagination-entries"
+              >
+                <label
+                  for="inputPassword"
+                  class="col-form-label mr-3 rounded-left"
+                  >Show</label
+                >
+                <input
+                  type="number"
+                  class="form-control mr-3"
+                  id="entery"
+                  value="1"
+                  (input)="onChangePageNumber($event)"
+                  max="{{ maxitemsPerPage }}"
+                />
+                <p class="mt-2">Entries</p>
+              </div>
+            </form>
+          </div>
+          <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
+            <div
+              class="ch-pagination d-lg-flex d-block float-lg-right float-none mr-0 mr-md-4"
+            >
+              <nav aria-label="Page navigation example" class="mr-0 mr-lg-2">
+                <pagination-controls
+                  (pageChange)="p = $event"
+                ></pagination-controls>
+              </nav>
+
+              <div class="input-pagination mx-auto">
+                <form action="">
+                  <div class="form-group d-flex">
+                    <label for="inputPassword" class="col-form-label mr-2"
+                      >Go to page</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control mr-3 w-25"
+                      id="entery"
+                      placeholder="1"
+                      (change)="gotoPage($event)"
+                    />
+                    <a href=""> Go <i class="fal fa-angle-right"></i> </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
